@@ -1,0 +1,528 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &314853025999074154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5684562858616663317}
+  m_Layer: 0
+  m_Name: MissileHardpointRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5684562858616663317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314853025999074154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.45, y: -0.35, z: 1.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3865355281018622214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3500293808774043175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5770717810480430200}
+  m_Layer: 0
+  m_Name: MissileHardpointLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5770717810480430200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3500293808774043175}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.45, y: -0.35, z: 1.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3865355281018622214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3692537792962414689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6914472369497730066}
+  m_Layer: 0
+  m_Name: AimOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6914472369497730066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3692537792962414689}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 1.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3865355281018622214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7049290144219704650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3450949888076900870}
+  m_Layer: 0
+  m_Name: VisualPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3450949888076900870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7049290144219704650}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1616681523946928809}
+  m_Father: {fileID: 3865355281018622214}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8988555050303336925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3865355281018622214}
+  - component: {fileID: 1584561755901715646}
+  - component: {fileID: 1730754508677185961}
+  - component: {fileID: 4425725725058813982}
+  - component: {fileID: 886016082118810503}
+  - component: {fileID: 1868421465683858175}
+  - component: {fileID: 5207792842231284297}
+  - component: {fileID: 3101400373895422064}
+  - component: {fileID: 3364400809360689632}
+  - component: {fileID: 833393949349572867}
+  - component: {fileID: 895433751263351844}
+  - component: {fileID: 3032238100006774996}
+  - component: {fileID: 7783819418834125973}
+  - component: {fileID: 5772898156939640598}
+  m_Layer: 0
+  m_Name: EnemyHelicopterBravo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3865355281018622214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3450949888076900870}
+  - {fileID: 5770717810480430200}
+  - {fileID: 5684562858616663317}
+  - {fileID: 6914472369497730066}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1584561755901715646
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  serializedVersion: 5
+  m_Mass: 5
+  m_LinearDamping: 0.55
+  m_AngularDamping: 1
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 80
+  m_CollisionDetection: 2
+--- !u!65 &1730754508677185961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.8, y: 2, z: 6.4}
+  m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!114 &4425725725058813982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 341376b9861254f5297d9eb3fdd27ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Combat.Health
+  maxHealth: 150
+  destroyWhenDead: 0
+--- !u!114 &886016082118810503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db1ba1d314c0489b94c543428d64cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Combat.DestroyOnDeath
+  explosionPrefab: {fileID: 6909037140406315019, guid: 74ee6d0ff260e4d0c83e80a1610b8e66, type: 3}
+  destroyDelay: 0.05
+  destroyRootObject: 1
+--- !u!114 &1868421465683858175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b2786c998594dc4bd4d594b381041b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Combat.TeamMember
+  team: 2
+--- !u!114 &5207792842231284297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f45473906fc4c36938b1ed4e6bd4cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Combat.EnemyUnit
+  displayName: Enemy Helicopter Bravo
+  unitType: 0
+--- !u!114 &3101400373895422064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 167af1914c2004954813168f6ccb1228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Enemies.EnemyHelicopterTargeting
+  target: {fileID: 0}
+  detectionRange: 220
+  awarenessRange: 340
+  loseTargetRange: 340
+  targetHeightOffset: 6
+--- !u!114 &3364400809360689632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fa60c1d8aa849e7831226e474c0c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Enemies.EnemyHelicopterSeparation
+  separationRadius: 18
+  separationStrength: 1.5
+  queryLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &833393949349572867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2823a962e9a04ffcb877f3baa0f386d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Enemies.EnemyHelicopterMovement
+  helicopterRigidbody: {fileID: 1584561755901715646}
+  terrain: {fileID: 0}
+  separation: {fileID: 3364400809360689632}
+  cruiseSpeed: 24
+  returnCruiseSpeed: 22
+  maximumSpeed: 30
+  acceleration: 16
+  brakingAcceleration: 20
+  yawSpeed: 115
+  yawAcceleration: 300
+  combatDistance: 58
+  minimumCombatDistance: 38
+  combatDistanceTolerance: 8
+  orbitStrength: 0.55
+  minimumTerrainClearance: 24
+  maximumHeightAboveTerrain: 155
+  preferredAltitudeOffset: 34
+  altitudeResponse: 2.4
+  verticalSpeedLimit: 13
+  orbitSign: 1
+  minimumAltitudeAboveTarget: 10
+  maximumAltitudeAboveTarget: 20
+  combatForwardPressure: 0.35
+  homePosition: {x: 0, y: 0, z: 0}
+  returnToHomeDistance: 225
+  hardCombatBoundaryDistance: 280
+  returnArrivalDistance: 18
+--- !u!114 &895433751263351844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aba734dc2e0a49a582cd3af680a4313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Weapons.MissileLauncher
+  missilePrefab: {fileID: 3029518945504270216, guid: 3737adcc4c1ff4ae88506d04d2fb5107, type: 3}
+  launchPoints:
+  - {fileID: 5770717810480430200}
+  - {fileID: 5684562858616663317}
+  ownerRoot: {fileID: 8988555050303336925}
+  ownerRigidbody: {fileID: 1584561755901715646}
+  maxAmmo: 999
+  fireCooldown: 2.4
+--- !u!114 &3032238100006774996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bbc93459e504244811cfdbf3d1a4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Enemies.EnemyHelicopterWeaponController
+  targeting: {fileID: 3101400373895422064}
+  missileLauncher: {fileID: 895433751263351844}
+  aimOrigin: {fileID: 6914472369497730066}
+  targetRigidbody: {fileID: 0}
+  attackRange: 115
+  minimumAttackRange: 30
+  requiredAimAngle: 18
+  initialFireDelay: 1.5
+  leadTime: 0.2
+--- !u!114 &7783819418834125973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1083a60fbbd94f38bb8c9e0517485bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Enemies.EnemyHelicopterVisualController
+  movement: {fileID: 833393949349572867}
+  visualPivot: {fileID: 3450949888076900870}
+  rotorTransforms:
+  - {fileID: 1616681523946928815}
+  - {fileID: 1616681523946928813}
+  forwardTiltAngle: 10
+  sideTiltAngle: 14
+  tiltSmoothness: 5
+  rotorSpeed: 1200
+  rotorLocalAxis: {x: 0, y: 1, z: 0}
+--- !u!114 &5772898156939640598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8988555050303336925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79f2e0455a264c0b9f639bcc608f42d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Enemies.EnemyHelicopterBrain
+  startActive: 1
+  targeting: {fileID: 3101400373895422064}
+  movement: {fileID: 833393949349572867}
+  weaponController: {fileID: 3032238100006774996}
+  health: {fileID: 4425725725058813982}
+--- !u!1001 &1616681523947053099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3450949888076900870}
+    m_Modifications:
+    - target: {fileID: 100002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_Name
+      value: ImportedHelicopterModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.55827904
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.55827904
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.55827904
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7013297
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.93336654
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6244402
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 24ef4cd67838e4c969f169dc2c14c0a5, type: 2}
+    - target: {fileID: 2300002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 24ef4cd67838e4c969f169dc2c14c0a5, type: 2}
+    - target: {fileID: 2300004, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 24ef4cd67838e4c969f169dc2c14c0a5, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+--- !u!4 &1616681523946928809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+  m_PrefabInstance: {fileID: 1616681523947053099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1616681523946928813 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400006, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+  m_PrefabInstance: {fileID: 1616681523947053099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1616681523946928815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: 17d12b7570a4eff4eaaa2562f61e7fda, type: 3}
+  m_PrefabInstance: {fileID: 1616681523947053099}
+  m_PrefabAsset: {fileID: 0}
