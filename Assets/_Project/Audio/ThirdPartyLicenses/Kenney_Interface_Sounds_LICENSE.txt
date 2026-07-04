@@ -1,0 +1,19 @@
+Kenney Interface Sounds
+Official asset page: https://kenney.nl/assets/interface-sounds
+Downloaded: 2026-07-04
+
+Official page states:
+- Category: Audio
+- Files: 100
+- License: Creative Commons CC0
+
+CC0 reference:
+- https://creativecommons.org/publicdomain/zero/1.0/
+
+Attribution requirement:
+- No attribution required under CC0 1.0 Universal.
+
+Local selection from this pack:
+- tick_001.ogg -> ButtonHover.wav
+- select_001.ogg -> ButtonClick.wav
+- confirmation_001.ogg -> ButtonConfirm.wav

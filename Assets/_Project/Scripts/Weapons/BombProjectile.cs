@@ -9,12 +9,18 @@ namespace HelicopterCombat.Weapons
         [SerializeField, Min(0f)] private float inheritOwnerVelocityMultiplier = 1f;
         [SerializeField, Min(0f)] private float gravityMultiplier = 1f;
         [SerializeField, Min(0f)] private float visualSpinSpeed = 90f;
+        [SerializeField] private GameObject impactDustPrefab;
 
         public void Configure(float configuredInitialForwardSpeed, float configuredInheritOwnerVelocityMultiplier, float configuredGravityMultiplier)
         {
             initialForwardSpeed = configuredInitialForwardSpeed;
             inheritOwnerVelocityMultiplier = configuredInheritOwnerVelocityMultiplier;
             gravityMultiplier = configuredGravityMultiplier;
+        }
+
+        public void ConfigureImpactDustPrefab(GameObject configuredImpactDustPrefab)
+        {
+            impactDustPrefab = configuredImpactDustPrefab;
         }
 
         protected override void OnOwnerInitialized()
@@ -37,6 +43,14 @@ namespace HelicopterCombat.Weapons
             }
 
             transform.Rotate(Vector3.right, visualSpinSpeed * Time.fixedDeltaTime, Space.Self);
+        }
+
+        protected override void HandleExplosionEffects()
+        {
+            if (impactDustPrefab != null)
+            {
+                Object.Instantiate(impactDustPrefab, transform.position, Quaternion.identity);
+            }
         }
     }
 }

@@ -270,7 +270,7 @@ namespace HelicopterCombat.EditorTools
             collider.size = new Vector3(5.8f, 2.0f, 6.4f);
 
             Health health = root.AddComponent<Health>();
-            health.Configure(150f, false);
+            health.Configure(120f, false);
             DestroyOnDeath destroyOnDeath = root.AddComponent<DestroyOnDeath>();
             destroyOnDeath.Configure(explosionPrefab, 0.05f, true);
             TeamMember teamMember = root.AddComponent<TeamMember>();
@@ -643,13 +643,15 @@ namespace HelicopterCombat.EditorTools
             }
 
             CombatMissionController missionController = GetOrAdd<CombatMissionController>(systemsRoot);
+            GameObject enemyTanks = GameObject.Find("EnemyTanks");
             missionController.Configure(
                 player != null ? player.GetComponent<PlayerDeathHandler>() : null,
                 new[]
                 {
                     alphaEnemy != null ? alphaEnemy.GetComponent<EnemyUnit>() : null,
                     bravoEnemy != null ? bravoEnemy.GetComponent<EnemyUnit>() : null
-                });
+                },
+                enemyTanks != null ? enemyTanks.GetComponentsInChildren<EnemyUnit>(true) : Array.Empty<EnemyUnit>());
         }
 
         private static T GetOrAdd<T>(GameObject target) where T : Component

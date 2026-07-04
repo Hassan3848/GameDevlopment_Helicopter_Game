@@ -1,0 +1,27 @@
+Mixkit sound effects notes
+Official license page: https://mixkit.co/license/
+Official summary page used for clarification: https://mixkit.co/llm-info/
+Downloaded: 2026-07-04
+
+Official site evidence captured:
+- The Mixkit license page describes use in commercial and non-commercial projects.
+- The site labels sound effects under "Sound Effects Free License".
+- The Mixkit AI-readable site summary states Mixkit assets are free to use without attribution or sign-up and describes the free license as valid for personal and commercial use.
+
+Attribution requirement used for this manifest:
+- No attribution required.
+
+Selected Mixkit clips:
+- 2658.wav - Wind blowing ambience
+- 2800.wav - Bomb explosion in battle
+- 1562.wav - Car explosion debris
+- 631.wav - Grand brass fanfare
+- 633.wav - Game over dark orchestra
+- 2704.wav - Helicopter propellers in the sky
+- 1597.wav - Tractors working on the field
+- 1714.wav - Fast rocket whoosh
+- 1489.wav - Air woosh
+
+Notes:
+- All selected Mixkit files were downloaded from official Mixkit download URLs exposed by the site's own download modal.
+- TankEngineLoop uses a heavy tractor engine/field clip as the closest clearly licensed heavy ground-vehicle fallback available from Mixkit in this environment.

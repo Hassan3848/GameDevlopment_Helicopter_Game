@@ -92,7 +92,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6199867376407884855}
+  - {fileID: 8817162674486581255}
   m_Father: {fileID: 8912817926187012537}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3577602540244561487
@@ -195,6 +195,10 @@ GameObject:
   - component: {fileID: 3903381491930340652}
   - component: {fileID: 4789749193746535949}
   - component: {fileID: 6658664991845106921}
+  - component: {fileID: 9087652696144070671}
+  - component: {fileID: 2921120488145666944}
+  - component: {fileID: 7069327844150045124}
+  - component: {fileID: 4649376772313070041}
   m_Layer: 0
   m_Name: PlayerHelicopter
   m_TagString: Untagged
@@ -375,7 +379,7 @@ MonoBehaviour:
   - {fileID: 2831471427288441506}
   ownerRoot: {fileID: 8084170739253122657}
   ownerRigidbody: {fileID: 8334645652988618010}
-  maxAmmo: 20
+  maxAmmo: 2147483647
   fireCooldown: 0.25
 --- !u!114 &7417976404746121614
 MonoBehaviour:
@@ -423,8 +427,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Utilities.RotorSpinner
   rotors:
-  - {fileID: 6199867376407884849}
-  - {fileID: 6199867376407884851}
+  - {fileID: 8817162674486581249}
+  - {fileID: 8817162674486581251}
   localAxis: {x: 0, y: 1, z: 0}
   speed: 1200
 --- !u!114 &3903381491930340652
@@ -471,7 +475,157 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Combat.TeamMember
   team: 1
---- !u!1001 &6199867376408014517
+--- !u!82 &9087652696144070671
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084170739253122657}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2921120488145666944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084170739253122657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59efd3678ccd403fb7df73bfa33e1cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Audio.HelicopterEngineAudio
+  audioSettings: {fileID: 11400000, guid: 4437ba331436343a58a4ee01c62cabbb, type: 2}
+  engineClip: {fileID: 8300000, guid: e70ab6169481d4fcfa944308bd1d92dd, type: 3}
+  targetRigidbody: {fileID: 8334645652988618010}
+  health: {fileID: 3903381491930340652}
+  gameFlowController: {fileID: 0}
+  playerHelicopter: 1
+  basePitchOffset: 0
+  fadeSpeed: 1.8
+  speedForMaxResponse: 28
+--- !u!114 &7069327844150045124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084170739253122657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20495a014a3364668be151bfb5ab8dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Audio.WeaponAudioController
+  missileLauncher: {fileID: 3107744703869179160}
+  bombLauncher: {fileID: 7417976404746121614}
+  missileLaunchClip: {fileID: 8300000, guid: 2491a154f475a4f1db9fbcfd9a0d77e4, type: 3}
+  bombDropClip: {fileID: 8300000, guid: 24a2ac051e4734387926f28bb66543cd, type: 3}
+--- !u!114 &4649376772313070041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8084170739253122657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efccfdf2c2b2644698e96ef9bd7a5df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.VFX.WeaponVfxController
+  missileLauncher: {fileID: 3107744703869179160}
+  bombLauncher: {fileID: 7417976404746121614}
+  missileMuzzleFlashPrefab: {fileID: 8474504182804681893, guid: 99762fdfc5de14c3eba981bf4ccca16d, type: 3}
+  bombReleasePuffPrefab: {fileID: 5922685264974143971, guid: cc0690cc600104417b17557b72a28630, type: 3}
+--- !u!1001 &8817162674486706821
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -540,18 +694,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f81aafb8004015d4b8c0add1556aee0a, type: 3}
---- !u!4 &6199867376407884849 stripped
+--- !u!4 &8817162674486581249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: f81aafb8004015d4b8c0add1556aee0a, type: 3}
-  m_PrefabInstance: {fileID: 6199867376408014517}
+  m_PrefabInstance: {fileID: 8817162674486706821}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6199867376407884851 stripped
+--- !u!4 &8817162674486581251 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: f81aafb8004015d4b8c0add1556aee0a, type: 3}
-  m_PrefabInstance: {fileID: 6199867376408014517}
+  m_PrefabInstance: {fileID: 8817162674486706821}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6199867376407884855 stripped
+--- !u!4 &8817162674486581255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: f81aafb8004015d4b8c0add1556aee0a, type: 3}
-  m_PrefabInstance: {fileID: 6199867376408014517}
+  m_PrefabInstance: {fileID: 8817162674486706821}
   m_PrefabAsset: {fileID: 0}

@@ -53,6 +53,11 @@ GameObject:
   - component: {fileID: 5620952780028395858}
   - component: {fileID: 3101939729714769839}
   - component: {fileID: 1983107664960513817}
+  - component: {fileID: 424215685093702809}
+  - component: {fileID: 7076956736703063636}
+  - component: {fileID: 67321195495986357}
+  - component: {fileID: 1600671054808002947}
+  - component: {fileID: 135151698204346997}
   m_Layer: 0
   m_Name: EnemyHelicopterAlpha
   m_TagString: Untagged
@@ -139,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341376b9861254f5297d9eb3fdd27ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Combat.Health
-  maxHealth: 150
+  maxHealth: 120
   destroyWhenDead: 0
 --- !u!114 &9054143954190711386
 MonoBehaviour:
@@ -336,6 +341,171 @@ MonoBehaviour:
   movement: {fileID: 5641804747577572108}
   weaponController: {fileID: 5620952780028395858}
   health: {fileID: 2261891987861974049}
+--- !u!82 &424215685093702809
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385490298924291452}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7076956736703063636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385490298924291452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59efd3678ccd403fb7df73bfa33e1cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Audio.HelicopterEngineAudio
+  audioSettings: {fileID: 11400000, guid: 4437ba331436343a58a4ee01c62cabbb, type: 2}
+  engineClip: {fileID: 8300000, guid: e70ab6169481d4fcfa944308bd1d92dd, type: 3}
+  targetRigidbody: {fileID: 2497600274970802475}
+  health: {fileID: 2261891987861974049}
+  gameFlowController: {fileID: 0}
+  playerHelicopter: 0
+  basePitchOffset: -0.03
+  fadeSpeed: 1.8
+  speedForMaxResponse: 28
+--- !u!114 &67321195495986357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385490298924291452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20495a014a3364668be151bfb5ab8dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Audio.WeaponAudioController
+  missileLauncher: {fileID: 8114495481425807736}
+  bombLauncher: {fileID: 0}
+  missileLaunchClip: {fileID: 8300000, guid: 2491a154f475a4f1db9fbcfd9a0d77e4, type: 3}
+  bombDropClip: {fileID: 0}
+--- !u!114 &1600671054808002947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385490298924291452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efccfdf2c2b2644698e96ef9bd7a5df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.VFX.WeaponVfxController
+  missileLauncher: {fileID: 8114495481425807736}
+  bombLauncher: {fileID: 0}
+  missileMuzzleFlashPrefab: {fileID: 8474504182804681893, guid: 99762fdfc5de14c3eba981bf4ccca16d, type: 3}
+  bombReleasePuffPrefab: {fileID: 0}
+--- !u!114 &135151698204346997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385490298924291452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7313effb860fe4f818e8e6c596594cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelicopterCombat.Audio.UnitDeathEffectsController
+  health: {fileID: 2261891987861974049}
+  deathEffectPrefab: {fileID: 7141888391747271987, guid: f8dcd7449ce6f40c6a496f85bfaaae65, type: 3}
+  deathExplosionClip: {fileID: 8300000, guid: e85c40ec93f744287857b0089a33e738, type: 3}
 --- !u!1 &6375884556095979790
 GameObject:
   m_ObjectHideFlags: 0

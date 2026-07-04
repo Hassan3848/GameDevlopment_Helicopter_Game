@@ -1,5 +1,6 @@
 using HelicopterCombat.Combat;
 using UnityEngine;
+using System;
 
 namespace HelicopterCombat.Weapons
 {
@@ -15,7 +16,11 @@ namespace HelicopterCombat.Weapons
 
         private float nextDropTime;
 
+        public event Action<BombLauncher, GameObject, Transform> Dropped;
+
         public int CurrentAmmo { get; private set; }
+        public int MaxAmmo => maxAmmo;
+        public bool IsUnlimited => maxAmmo >= int.MaxValue / 4;
 
         public void Configure(GameObject configuredBombPrefab, Transform configuredDropPoint, GameObject configuredOwnerRoot, Rigidbody configuredOwnerRigidbody)
         {
@@ -53,6 +58,7 @@ namespace HelicopterCombat.Weapons
                 projectile.InitializeOwner(ownerRoot != null ? ownerRoot : gameObject, ownerRigidbody);
             }
 
+            Dropped?.Invoke(this, bombObject, dropPoint);
             CurrentAmmo--;
             nextDropTime = Time.time + dropCooldown;
             return true;

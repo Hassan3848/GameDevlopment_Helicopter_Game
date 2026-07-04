@@ -108,7 +108,12 @@ namespace HelicopterCombat.Combat
                 }
             }
 
+            HandleExplosionEffects();
             Destroy(gameObject);
+        }
+
+        protected virtual void HandleExplosionEffects()
+        {
         }
 
         private void IgnoreOwnerCollisions()

@@ -1,0 +1,18 @@
+Kenney Impact Sounds
+Official asset page: https://kenney.nl/assets/impact-sounds
+Downloaded: 2026-07-04
+
+Official page states:
+- Category: Audio
+- Files: 130
+- License: Creative Commons CC0
+
+CC0 reference:
+- https://creativecommons.org/publicdomain/zero/1.0/
+
+Attribution requirement:
+- No attribution required under CC0 1.0 Universal.
+
+Notes:
+- The pack was downloaded and inspected for Milestone 7 sourcing.
+- No final Milestone 7 clip was copied from this pack because the selected explosion and vehicle candidates from Mixkit were a better fit for the required targets.

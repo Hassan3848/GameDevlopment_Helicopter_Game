@@ -384,6 +384,7 @@ namespace HelicopterCombat.EditorTools
 
             combatInput.Configure(inputActions);
             missileLauncher.Configure(missilePrefab, new[] { left, right }, player, playerRigidbody);
+            missileLauncher.ConfigureAmmoAndCooldown(int.MaxValue, 0.25f);
             bombLauncher.Configure(bombPrefab, bombDrop, player, playerRigidbody);
             weaponController.Configure(combatInput, missileLauncher, bombLauncher);
 

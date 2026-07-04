@@ -1,0 +1,16 @@
+Pixabay fallback notes
+Official site attempted: https://pixabay.com/sound-effects/
+Attempted on: 2026-07-04
+
+Result:
+- Pixabay returned a Cloudflare "Just a moment..." challenge page in this environment.
+- That means manual browser interaction or challenge solving would be required.
+
+Per task rules:
+- No bypass was attempted.
+- No scraping workaround was used.
+- No Pixabay asset was downloaded.
+
+Impact on Milestone 7 asset preparation:
+- No required final asset is missing.
+- Pixabay remained unused because Mixkit and Kenney provided acceptable licensed selections.
